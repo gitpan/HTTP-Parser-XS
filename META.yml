@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               HTTP-Parser-XS
-version:            0.02
+version:            0.03
 abstract:           a fast, primitive HTTP request parser
 author:
     - Kazuho Oku
