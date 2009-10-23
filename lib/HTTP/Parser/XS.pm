@@ -3,7 +3,7 @@ package HTTP::Parser::XS;
 use strict;
 use warnings;
 
-use Exporter qw(import);
+use base qw(Exporter);
 
 our %EXPORT_TAGS = (
     'all' => [ qw/parse_http_request/ ],
@@ -11,7 +11,7 @@ our %EXPORT_TAGS = (
 our @EXPORT_OK = @{$EXPORT_TAGS{all}};
 our @EXPORT = ();
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 require XSLoader;
 XSLoader::load('HTTP::Parser::XS', $VERSION);
