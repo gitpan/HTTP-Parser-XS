@@ -66,8 +66,10 @@ static char* url_decode(const char* s, size_t len)
     if (s[i] == '%') {
       int hi, lo;
       if ((hi = hex_decode(s[i + 1])) == -1
-	  || (lo = hex_decode(s[i + 2])) == -1)
-	return NULL;
+	  || (lo = hex_decode(s[i + 2])) == -1) {
+        free(dbuf);
+    	return NULL;
+      }
       *d++ = hi * 16 + lo;
       i += 3;
     } else
@@ -120,6 +122,9 @@ CODE:
   if (ret < 0)
     goto done;
   
+  if (!SvROK(envref))
+    Perl_croak(aTHX_ "second param to parse_http_request should be a hashref");
+
   env = (HV*)SvRV(envref);
   if (SvTYPE(env) != SVt_PVHV)
     Perl_croak(aTHX_ "second param to parse_http_request should be a hashref");
