@@ -1,3 +1,4 @@
+benchmark/simple.pl
 Changes
 lib/HTTP/Parser/XS.pm
 Makefile.PL

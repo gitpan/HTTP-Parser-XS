@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                HTTP-Parser-XS
-version:             0.07
+version:             0.08
 abstract:            a fast, primitive HTTP request parser
 license:             ~
 author:              
