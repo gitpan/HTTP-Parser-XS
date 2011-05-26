@@ -19,7 +19,7 @@ use constant {
     HEADERS_AS_ARRAYREF =>2,    # Ordered ArrayRef : [ name, value, name2, value2 ... ]
 };
 
-our $VERSION = '0.13';
+our $VERSION = '0.14';
 
 our $BACKEND;
 
@@ -74,7 +74,7 @@ HTTP::Parser::XS - a fast, primitive HTTP request parser
   my %special_headers = (
     'content-length' => undef,
   );
-  my($ret, $status, $message, $headers)
+  my($ret, $minor_version, $status, $message, $headers)
     = parse_http_response($response, HEADERS_AS_ARRAYREF, \%special_headers);
 
   if($ret == -1) }
