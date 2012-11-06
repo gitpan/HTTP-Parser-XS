@@ -16,9 +16,11 @@ lib/HTTP/Parser/XS/PP.pm
 Makefile.PL
 MANIFEST			This list of files
 META.yml
+picohttpparser/bench.c
 picohttpparser/picohttpparser.c
 picohttpparser/picohttpparser.h
 picohttpparser/test.c
+picohttpparser/test_response.c
 ppport.h
 README
 t/00base.t
