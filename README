@@ -140,22 +140,32 @@ LIMITATIONS
 COPYRIGHT
     Copyright 2009- Kazuho Oku
 
-AUTHOR
-    Kazuho Oku gfx mala tokuhirom
+AUTHORS
+    *   Kazuho Oku <https://metacpan.org/author/KAZUHO>
+
+    *   gfx <https://metacpan.org/author/GFUJI>
+
+    *   mala <https://metacpan.org/author/MALA>
+
+    *   tokuhirom <https://metacpan.org/author/TOKUHIROM>
 
 THANKS TO
-    nothingmuch charsbar
+    *   nothingmuch <https://metacpan.org/author/NUFFIN>
+
+    *   charsbar <https://metacpan.org/author/CHARSBAR>
+
+    *   DOLMEN <https://metacpan.org/author/DOLMEN>
 
 SEE ALSO
-    <http://github.com/kazuho/picohttpparser>
+    *   <http://github.com/kazuho/picohttpparser>
 
-    HTTP::Parser
+    *   HTTP::Parser
 
-    HTTP::HeaderParser::XS
+    *   HTTP::HeaderParser::XS
 
-    Plack
+    *   Plack
 
-    PSGI
+    *   PSGI
 
 LICENSE
     This library is free software; you can redistribute it and/or modify it
